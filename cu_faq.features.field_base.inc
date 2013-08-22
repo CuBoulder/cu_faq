@@ -1,3 +1,4 @@
+
 <?php
 /**
  * @file
@@ -10,13 +11,13 @@
 function cu_faq_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_faq_answer'
-  $field_bases['field_faq_answer'] = array(
+  // Exported field_base: 'field_qa_answer'
+  $field_bases['field_qa_answer'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_faq_answer',
+    'field_name' => 'field_qa_answer',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -39,13 +40,13 @@ function cu_faq_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_faq_collection'
-  $field_bases['field_faq_collection'] = array(
+  // Exported field_base: 'field_qa_collection'
+  $field_bases['field_qa_collection'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_faq_collection',
+    'field_name' => 'field_qa_collection',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -58,13 +59,13 @@ function cu_faq_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_faq_collection_title'
-  $field_bases['field_faq_collection_title'] = array(
+  // Exported field_base: 'field_qa_collection_title'
+  $field_bases['field_qa_collection_title'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_faq_collection_title',
+    'field_name' => 'field_qa_collection_title',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -87,13 +88,40 @@ function cu_faq_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_faq_question'
-  $field_bases['field_faq_question'] = array(
+  // Exported field_base: 'field_qa_display'
+  $field_bases['field_qa_display'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_faq_question',
+    'field_name' => 'field_qa_display',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Accordion',
+        1 => 'Anchor Links',
+      ),
+      'allowed_values_function' => '',
+      'allowed_values_php' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_integer',
+  );
+
+  // Exported field_base: 'field_qa_question'
+  $field_bases['field_qa_question'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_qa_question',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -117,13 +145,13 @@ function cu_faq_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_question_answer'
-  $field_bases['field_question_answer'] = array(
+  // Exported field_base: 'field_qa'
+  $field_bases['field_qa'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_question_answer',
+    'field_name' => 'field_qa',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,

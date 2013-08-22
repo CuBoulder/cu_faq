@@ -10,9 +10,9 @@
 function cu_faq_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_faq_collection-field_faq_collection_title'
-  $field_instances['field_collection_item-field_faq_collection-field_faq_collection_title'] = array(
-    'bundle' => 'field_faq_collection',
+  // Exported field_instance: 'field_collection_item-field_qa_collection-field_qa_collection_title'
+  $field_instances['field_collection_item-field_qa_collection-field_qa_collection_title'] = array(
+    'bundle' => 'field_qa_collection',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -27,7 +27,7 @@ function cu_faq_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'fences_wrapper' => 'no_wrapper',
-    'field_name' => 'field_faq_collection_title',
+    'field_name' => 'field_qa_collection_title',
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
@@ -45,9 +45,9 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_faq_collection-field_question_answer'
-  $field_instances['field_collection_item-field_faq_collection-field_question_answer'] = array(
-    'bundle' => 'field_faq_collection',
+  // Exported field_instance: 'field_collection_item-field_qa_collection-field_qa'
+  $field_instances['field_collection_item-field_qa_collection-field_qa'] = array(
+    'bundle' => 'field_qa_collection',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -61,7 +61,7 @@ function cu_faq_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_question_answer',
+    'field_name' => 'field_qa',
     'label' => 'Questions and Answers',
     'required' => 0,
     'settings' => array(
@@ -76,9 +76,9 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_question_answer-field_faq_answer'
-  $field_instances['field_collection_item-field_question_answer-field_faq_answer'] = array(
-    'bundle' => 'field_question_answer',
+  // Exported field_instance: 'field_collection_item-field_qa-field_qa_answer'
+  $field_instances['field_collection_item-field_qa-field_qa_answer'] = array(
+    'bundle' => 'field_qa',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -92,7 +92,7 @@ function cu_faq_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_faq_answer',
+    'field_name' => 'field_qa_answer',
     'label' => 'Answer',
     'required' => 0,
     'settings' => array(
@@ -110,9 +110,9 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_question_answer-field_faq_question'
-  $field_instances['field_collection_item-field_question_answer-field_faq_question'] = array(
-    'bundle' => 'field_question_answer',
+  // Exported field_instance: 'field_collection_item-field_qa-field_qa_question'
+  $field_instances['field_collection_item-field_qa-field_qa_question'] = array(
+    'bundle' => 'field_qa',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -126,7 +126,7 @@ function cu_faq_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_faq_question',
+    'field_name' => 'field_qa_question',
     'label' => 'Question',
     'required' => 0,
     'settings' => array(
@@ -144,9 +144,9 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-frequently_asked_questions-body'
-  $field_instances['node-frequently_asked_questions-body'] = array(
-    'bundle' => 'frequently_asked_questions',
+  // Exported field_instance: 'node-faqs-body'
+  $field_instances['node-faqs-body'] = array(
+    'bundle' => 'faqs',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -188,9 +188,9 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-frequently_asked_questions-field_faq_collection'
-  $field_instances['node-frequently_asked_questions-field_faq_collection'] = array(
-    'bundle' => 'frequently_asked_questions',
+  // Exported field_instance: 'node-faqs-field_qa_collection'
+  $field_instances['node-faqs-field_qa_collection'] = array(
+    'bundle' => 'faqs',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -210,7 +210,7 @@ function cu_faq_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'fences_wrapper' => 'div',
-    'field_name' => 'field_faq_collection',
+    'field_name' => 'field_qa_collection',
     'label' => 'FAQ Collection',
     'required' => 0,
     'settings' => array(
@@ -225,10 +225,54 @@ function cu_faq_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-faqs-field_qa_display'
+  $field_instances['node-faqs-field_qa_display'] = array(
+    'bundle' => 'faqs',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'default_value_function' => '',
+    'default_value_php' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
+    'field_name' => 'field_qa_display',
+    'label' => 'Display FAQs as',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Answer');
   t('Body');
+  t('Display FAQs as');
   t('FAQ Collection');
   t('Question');
   t('Questions and Answers');

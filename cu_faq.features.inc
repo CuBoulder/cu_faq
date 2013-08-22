@@ -30,7 +30,7 @@ function cu_faq_views_api() {
  */
 function cu_faq_node_info() {
   $items = array(
-    'frequently_asked_questions' => array(
+    'faqs' => array(
       'name' => t('Frequently Asked Questions'),
       'base' => 'node_content',
       'description' => t('Questions and Answers'),

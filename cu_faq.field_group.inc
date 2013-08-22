@@ -13,17 +13,17 @@ function cu_faq_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_faq_answer|field_collection_item|field_question_answer|form';
-  $field_group->group_name = 'group_faq_answer';
+  $field_group->identifier = 'group_qa_answer|field_collection_item|field_qa|form';
+  $field_group->group_name = 'group_qa_answer';
   $field_group->entity_type = 'field_collection_item';
-  $field_group->bundle = 'field_question_answer';
+  $field_group->bundle = 'field_qa';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_faq';
+  $field_group->parent_name = 'group_qa';
   $field_group->data = array(
     'label' => 'Answer',
     'weight' => '3',
     'children' => array(
-      0 => 'field_faq_answer',
+      0 => 'field_qa_answer',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -35,22 +35,22 @@ function cu_faq_field_group_info() {
       ),
     ),
   );
-  $export['group_faq_answer|field_collection_item|field_question_answer|form'] = $field_group;
+  $export['group_qa_answer|field_collection_item|field_qa|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_faq_question|field_collection_item|field_question_answer|form';
-  $field_group->group_name = 'group_faq_question';
+  $field_group->identifier = 'group_qa_question|field_collection_item|field_qa|form';
+  $field_group->group_name = 'group_qa_question';
   $field_group->entity_type = 'field_collection_item';
-  $field_group->bundle = 'field_question_answer';
+  $field_group->bundle = 'field_qa';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_faq';
+  $field_group->parent_name = 'group_qa';
   $field_group->data = array(
     'label' => 'Question',
     'weight' => '1',
     'children' => array(
-      0 => 'field_faq_question',
+      0 => 'field_qa_question',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -62,23 +62,23 @@ function cu_faq_field_group_info() {
       ),
     ),
   );
-  $export['group_faq_question|field_collection_item|field_question_answer|form'] = $field_group;
+  $export['group_qa_question|field_collection_item|field_qa|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_faq|field_collection_item|field_question_answer|form';
-  $field_group->group_name = 'group_faq';
+  $field_group->identifier = 'group_qa|field_collection_item|field_qa|form';
+  $field_group->group_name = 'group_qa';
   $field_group->entity_type = 'field_collection_item';
-  $field_group->bundle = 'field_question_answer';
+  $field_group->bundle = 'field_qa';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'FAQ',
     'weight' => '0',
     'children' => array(
-      0 => 'group_faq_question',
-      1 => 'group_faq_answer',
+      0 => 'group_qa_question',
+      1 => 'group_qa_answer',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -88,7 +88,7 @@ function cu_faq_field_group_info() {
       ),
     ),
   );
-  $export['group_faq|field_collection_item|field_question_answer|form'] = $field_group;
+  $export['group_qa|field_collection_item|field_qa|form'] = $field_group;
 
   return $export;
 }
