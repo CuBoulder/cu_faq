@@ -88,33 +88,6 @@ function cu_faq_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_qa_display'
-  $field_bases['field_qa_display'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_qa_display',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'Accordion',
-        1 => 'Anchor Links',
-      ),
-      'allowed_values_function' => '',
-      'allowed_values_php' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_integer',
-  );
-
   // Exported field_base: 'field_qa_question'
   $field_bases['field_qa_question'] = array(
     'active' => 1,
