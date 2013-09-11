@@ -1,6 +1,6 @@
 name = FAQs
 core = 7.x
-package = CU Features Required
+package = CU
 php = 5.2.4
 dependencies[] = ctools
 dependencies[] = cu_video
