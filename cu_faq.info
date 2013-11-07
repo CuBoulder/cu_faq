@@ -1,6 +1,6 @@
 name = FAQs
 core = 7.x
-package = CU
+package = CU-Boulder
 dependencies[] = ctools
 dependencies[] = cu_video
 dependencies[] = eva
