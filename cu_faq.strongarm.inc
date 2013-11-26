@@ -162,9 +162,7 @@ function cu_faq_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_faqs';
   $strongarm->value = array(
-    0 => 'menu-footer-menu',
-    1 => 'main-menu',
-    2 => 'menu-secondary-menu',
+    0 => 'main-menu',
   );
   $export['menu_options_faqs'] = $strongarm;
 
