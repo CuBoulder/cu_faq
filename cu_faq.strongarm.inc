@@ -20,27 +20,6 @@ function cu_faq_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'ant_faqs';
-  $strongarm->value = '0';
-  $export['ant_faqs'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_pattern_faqs';
-  $strongarm->value = '';
-  $export['ant_pattern_faqs'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_php_faqs';
-  $strongarm->value = 0;
-  $export['ant_php_faqs'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'attachment_links_create_alias_faqs';
   $strongarm->value = 0;
   $export['attachment_links_create_alias_faqs'] = $strongarm;
