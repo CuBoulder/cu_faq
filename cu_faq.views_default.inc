@@ -12,8 +12,8 @@ function cu_faq_views_default_views() {
 
   $view = new view();
   $view->name = 'cu_faq';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'FAQ EVA.';
+  $view->tag = 'faq';
   $view->base_table = 'node';
   $view->human_name = 'CU FAQ';
   $view->core = 7;
